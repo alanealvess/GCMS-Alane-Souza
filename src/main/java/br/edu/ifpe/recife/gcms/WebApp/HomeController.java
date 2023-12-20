@@ -18,6 +18,6 @@ public class HomeController {
 
 	@RequestMapping("/alaneHotfix")
 	public @ResponseBody String greetingString() {
-		return "Ola, Alane (Hotfix) !";
+		returnxx "Ola, Alane (Hotfix) !";
 	}
 }
