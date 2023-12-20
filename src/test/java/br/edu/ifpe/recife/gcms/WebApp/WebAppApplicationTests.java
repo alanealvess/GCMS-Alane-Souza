@@ -26,11 +26,9 @@ class WebAppApplicationTests {
 							.string(containsString("Hello, World")));
 	}
 	@Test
-		public void shouldReturnDefaultMessage1() throws Exception {
-		this.mockMvc.perform(get("/alane"))
-		.andDo(print()).andExpect(status().isOk())
-		.andExpect(content()
-				.string(containsString("Ola, Alane !")));
-
-	}
+public void shouldReturnDefaultMessage1() throws Exception {
+    this.mockMvc.perform(get("/alane"))
+        .andDo(print()).andExpect(status().isOk())
+        // Introduzindo uma expectativa incorreta para quebrar o teste
+        .andExpect(content().string(containsString("Expectativa Incorreta")));
 }
