@@ -20,6 +20,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container:
+      image: docker://alanealves/image-rem-alane-alves:webapp
 
     steps:
     - uses: actions/checkout@v3
